@@ -1,0 +1,1 @@
+export const apiData={title:'Playwright Assignment',body:'API CRUD Practice',userId:1};
