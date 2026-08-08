@@ -28,10 +28,7 @@ pipeline {
             }
         }
 
-        stage('Generate HTML Report') {
-            steps {
-                bat 'npx playwright show-report'
-            }
-        }
+        
+        
     }
 }
