@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { env } from './tests/utils/env';
 
 export default defineConfig({
   testDir: 'tests/specs',
@@ -16,8 +17,8 @@ export default defineConfig({
     ['allure-playwright'],
   ],
   use: {
-    baseURL: 'https://www.sreenidhirajakrishnan.com',
-    headless: true,
+    baseURL: env.baseUrl,
+    headless: env.headless,
     viewport: { width: 1280, height: 800 },
     actionTimeout: 10000,
     trace: 'retain-on-failure',

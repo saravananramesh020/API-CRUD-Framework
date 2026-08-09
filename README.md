@@ -22,6 +22,9 @@ This repository contains a production-grade Playwright test framework structured
    npm install
    ```
 
+## Environment Configuration
+Copy `.env.example` to `.env` and adjust the URLs or browser settings as needed.
+
 ## Running Tests
 - Run all tests:
   ```bash
