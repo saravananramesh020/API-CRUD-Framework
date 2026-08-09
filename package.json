@@ -2,7 +2,8 @@
   "name": "playwright-api-crud-assignment",
   "version": "1.0.0",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:regression": "playwright test tests/specs/regression"
   },
   "devDependencies": {
     "@playwright/test": "^1.61.1",
