@@ -1,7 +1,0 @@
-import {test,expect} from '@playwright/test';
-test('GET',async({request})=>{
-    const r=await request.get('/posts/1');
-    expect(r.ok()).toBeTruthy();
-    const b=await r.json();
-    expect(b.id).toBe(1);
-});
