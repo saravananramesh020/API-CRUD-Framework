@@ -1,4 +1,5 @@
 import { Page } from '@playwright/test';
+import { resolveUrl } from '../utils/env';
 
 export abstract class BasePage {
   readonly page: Page;
@@ -10,7 +11,7 @@ export abstract class BasePage {
   }
 
   async goto() {
-    await this.page.goto(this.path);
+    await this.page.goto(resolveUrl(this.path));
     await this.waitForPageLoad();
   }
 
